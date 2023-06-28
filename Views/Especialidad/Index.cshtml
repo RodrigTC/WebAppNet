@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Especialidad>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/estilos3.css">
+
+</head>
+<body>
+    <h2><a asp-action="NuevaEspecialidad">Nueva especialidad</a></h2>
+    <h3 class="alert-primary">Listado de especialides</h3>
+    <table class="table">
+        <tr>
+            <td>Codigo</td>
+            <td>Nombre de la especialidad</td>
+            <td>Eliminar</td>
+            <td>Modificar</td>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdEspecialidad</td>
+                    <td>@item.Descripcion</td>
+                    <td><a asp-action="Eliminar" asp-route-id="@item.IdEspecialidad">Eliminar</a></td>
+                    <td><a asp-action="Modificar" asp-route-id="@item.IdEspecialidad">Modificar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

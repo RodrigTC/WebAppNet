@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Usuario>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/estilos2.css">
+    </head>
+    <body>
+        
+        <h3 class="text">Listado de usuarios</h3>
+        <table class="table ">
+            <tr>
+                <td>Codigo</td>
+                <td>Nombre </td>
+                <td>Apellido </td>
+                <td>Correo </td>
+                <td>Contraseña </td>
+                <td>Nacimiento</td>
+                <td>Genero </td>
+                <td>Telefono </td>
+                <td>Eliminar </td>
+                <td>Modificar</td>
+            </tr>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdUser</td>
+                    <td>@item.Nombreu</td>
+                    <td>@item.Apellidou</td>
+                    <td>@item.Correou</td>
+                    <td>@item.Contraseñau</td>
+                    <td>@item.Nacimiento</td>
+                    <td>@item.Genero</td>
+                    <td>@item.Telefono</td>
+                    <td><a asp-action="Eliminar" asp-route-id="@item.IdUser">Eliminar</a></td>
+                    <td><a asp-action="Modificar" asp-route-id="@item.IdUser">Modificar</a></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        <h2><a asp-action="NuevoUsuario">Agregar usuario</a></h2>
+    </body>
+</html>

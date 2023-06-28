@@ -1,0 +1,36 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Citum>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/estilos3.css">
+    </head>
+    <body>
+    <h1>Bienvenido Dr. @ViewData["ape"] </h1>
+
+    <h3 class="text">Estas son sus citas pendientes:</h3>
+    <table class="table">
+        <tr>
+            <td>Usuario</td>
+            <td>Especialidad</td>
+            <td>Hora</td>
+            <td>Dia</td>
+            <td>Costo</td>
+
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NomUser</td>
+                    <td>@item.NomEspecialidad</td>
+                    <td>@item.Horario</td>
+                    <td>@item.Dia</td>
+                    <td>@item.Costo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <h3><a asp-action="SelectDia">CITAS ORDENADAS POR DIAS</a></h3>
+    </body>
+</html>

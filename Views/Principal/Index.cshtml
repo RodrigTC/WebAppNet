@@ -1,0 +1,126 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+    <title>TaSave</title>
+    <link rel="stylesheet" href="~/css/EstilosPrincipal.css" />
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+
+<body>
+    <header>
+        <h1>Clinica General Nueva Vida</h1>
+    </header>
+
+    <nav class="principal">
+        <ul>
+            <li><a href="@Url.Action("RedirectToAdmin","Principal")">¿Trabaja con nosotros?</a></li>
+            <li><a href="@Url.Action("RedirectToLogin","Principal")">Reservar Cita</a></li>
+            <li><a href="@Url.Action("RedirectToCredi","Principal")">¿Quienes somos?</a></li>
+            <li><a href="@Url.Action("RedirectToDoctor","Principal")">Doctores</a></li>
+            <li><a href="@Url.Action("RedirectToContac","Principal")">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Bienvenido a la Clinica General Nueva Vida</h2>
+        <p>Ofrecemos servicios médicos de calidad con un enfoque en la atención personalizada y el bienestar de nuestros pacientes.</p>
+        <a href="@Url.Action("RedirectToLogin","Principal")" class="cta-button">Agendar cita</a>
+
+
+        <div class="container">
+            <div class="column">
+                <img src="./img/carru1.jpg" alt="Imagen">
+            </div>
+            <div class="column">
+                <h2>Nuestra Infraestructura</h2>
+                <p> La Clínica Nueva Vida cuenta con una infraestructura moderna y bien equipada para brindar atención médica de calidad a sus pacientes. A continuación, se proporciona información sobre su infraestructura: </p><br />
+                <p> 1. Edificio: La clínica está ubicada en un edificio de varios pisos con una arquitectura moderna y acogedora. El diseño del edificio se ha realizado teniendo en cuenta las necesidades de los pacientes, asegurando una distribución eficiente de los espacios y la comodidad de todos los visitantes.</p><br />
+                <p> 2. Áreas de espera: La clínica cuenta con amplias áreas de espera, diseñadas para brindar comodidad a los pacientes mientras esperan su turno. Estas áreas están equipadas con asientos cómodos, revistas actualizadas y una decoración agradable para crear un ambiente relajante. </p><br />
+                <p> 3. Consultorios médicos: La clínica dispone de consultorios médicos equipados con tecnología avanzada y herramientas médicas necesarias para realizar evaluaciones, diagnósticos y tratamientos. Cada consultorio ha sido diseñado pensando en la privacidad y el confort del paciente.</p><br />
+                <p> 4. Laboratorio: La clínica cuenta con un laboratorio equipado con equipos modernos y personal capacitado para realizar análisis clínicos y pruebas diagnósticas. Esto permite obtener resultados precisos y confiables en un tiempo rápido, lo que facilita el proceso de diagnóstico y tratamiento.</p><br />
+                <p> 5. Sala de procedimientos: Para llevar a cabo procedimientos médicos y tratamientos especializados, la clínica dispone de una sala de procedimientos equipada con tecnología de vanguardia. Esta sala cumple con los estándares de seguridad y está diseñada para garantizar el bienestar de los pacientes durante cualquier intervención.</p><br />
+                <p> 6. Área de recuperación: Después de los procedimientos o tratamientos que requieren supervisión posterior, la clínica cuenta con un área de recuperación donde los pacientes pueden descansar y recibir atención especializada hasta que se recuperen completamente.</p><br />
+                <p> 7. Farmacia: La clínica cuenta con una farmacia interna que ofrece una amplia gama de medicamentos y productos farmacéuticos. Esto permite a los pacientes obtener los medicamentos recetados de manera conveniente y rápida, sin tener que buscar en otros lugares.</p><br />
+                <p> 8. Tecnología médica avanzada: La clínica invierte en tecnología médica de vanguardia para garantizar diagnósticos precisos y tratamientos efectivos. Esto incluye equipos de imagenología, sistemas de registro electrónico de salud, monitores de pacientes y otros dispositivos médicos avanzados.</p><br />
+                <p>  La infraestructura de nuestra Clinica está diseñada para proporcionar un entorno cómodo, seguro y eficiente para los pacientes y el personal médico. La combinación de instalaciones modernas y tecnología médica avanzada permite ofrecer servicios de atención médica de calidad y mejorar la experiencia general de los pacientes.</p><br />
+            </div>
+        </div>
+
+    </section>
+   @* <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta">
+                    <img src="./img/carru1.jpg" alt="item-1-Carrusel" />
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-4">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta">
+                    <img src="./img/carru2.jpg" alt="item-2-Carrusel" />
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta">
+                    <img src="./img/carru3.jpg" alt="item-3-Carrusel" />
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-4">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-4">
+                <div class="itemCarrouselTarjeta">
+                    <img src="./img/carru4.jpg" alt="item-4-Carrusel" />
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>*@
+         
+
+
+    </div>
+    <final>
+        <h1>                               </h1>
+
+
+    </final>
+</body>
+<footer class="footer">
+    <div class="container">
+        &copy; 2023 - Clinica General Nueva Vida #TodasMienten - <a asp-area="" asp-controller="Home" asp-action="Privacy">Politicas de Privacidad</a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Dium>
+
+
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+         <link rel="stylesheet" href="~/css/estilos3.css">
+    </head>
+    <body>
+        <h3 class="text-black">Seleccione un dia para ver sus citas pendientes...</h3>
+        @foreach(var item in Model)
+        {
+            <button class="button my-button"><a asp-controller="InicioDoc" asp-action="CitasPorDia" asp-route-id="@item.IdDia">@item.Dia</a></button>
+        <br />
+                    
+        }
+    </body>
+</html>

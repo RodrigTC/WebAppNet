@@ -1,0 +1,41 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Citum>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/estilos3.css">
+    </head>
+    <body>
+        <h3 class="align-items-center alert-primary">CITAS REGISTRADAS</h3>
+        <table class="table table-bordered">
+            <tr>
+                <td>Usuario</td>
+                <td>Doctor</td>
+                <td>Especialidad</td>
+                <td>Hora</td>
+                <td>Dia</td>
+                <td>Costo</td>
+                <td>Eliminar</td>
+            </tr>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.NomUser</td>
+                        <td>@item.NomDoctor</td>
+                        <td>@item.NomEspecialidad</td>
+                        <td>@item.Horario</td>
+                        <td>@item.Dia</td>
+                        <td>@item.Costo</td>
+                        <td><a asp-action="Eliminar" asp-route-id="@item.IdCita">Eliminar cita</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+</html>
+
+

@@ -1,0 +1,28 @@
+﻿@model TRABAJO_FINAL.Models.Usuario
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/estilos4.css">
+    </head>
+<body>
+    <div class="login-box">
+        <form asp-controller="Usuario" asp-action="ModificarUsuario" method="post">
+
+            <input type="hidden" asp-for="IdUser" placeholder="Ingrese el codigo" />
+            Nombre<input type="text" asp-for="Nombreu" placeholder="Ingrese el nombre" />
+            Apellido<input type="text" asp-for="Apellidou" placeholder="Ingrese el Apellido" />
+            Correo<input type="text" asp-for="Correou" placeholder="Ingrese el Correo" />
+            <input type="hidden" asp-for="Contraseñau" placeholder="Ingrese contrasela" />
+            <input type="hidden" asp-for="Nacimiento" placeholder="Ingrese el nacimiento" />
+            <input type="hidden" asp-for="Genero" placeholder="Ingrese el genero" />
+            Telefono<input type="text" asp-for="Telefono" placeholder="Ingrese el Telefono" />
+            <input type="submit" value="Modificar" />
+
+        </form>
+     </div>
+</body>
+</html>

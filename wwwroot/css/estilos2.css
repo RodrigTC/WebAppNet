@@ -1,0 +1,147 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    background-color: none;
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #b80f22;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border: solid;
+}
+
+.border-top footer text-muted {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #b80f22;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 70px 30px;
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+final {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .login-box input[type="text"], .login-box input[type="contraseña"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #822121;
+        font-size: 16px;
+    }
+
+    .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        text-align: center;
+        background: #b80f22;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+        .login-box input[type="submit"]:hover {
+            cursor: pointer;
+            background: #ffc107;
+            color: #000;
+        }
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+    .login-box a:hover {
+        color: #808080;
+    }
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Estilo para las celdas de encabezado de la tabla */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para las celdas normales de la tabla */
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para las filas impares de la tabla */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+h1 {
+    text-align: center;
+}

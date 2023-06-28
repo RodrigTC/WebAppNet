@@ -1,0 +1,28 @@
+﻿@model TRABAJO_FINAL.Models.Doctor
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head></head>
+    <body>
+        <form asp-controller="Doctor" asp-action="ModificarDoctor" method="post">
+
+            <input type="hidden" asp-for="IdDoctor" placeholder="Ingrese el codigo" />
+            Nombre<input type="text" asp-for="NombreD" placeholder="Ingrese el nombre" />
+            Apellido<input type="text" asp-for="ApellidoD" placeholder="Ingrese el Apellido" />
+            Correo<input type="text" asp-for="CorreoD" placeholder="Ingrese el Correo" />
+            <input type="hidden" asp-for="ContraseñaD" placeholder="Ingrese contraseña" />
+            <input type="hidden" asp-for="IdEspecialidad" placeholder="Ingrese la especialidad" />
+            <input type="submit" value="Modificar" />
+
+        </form>
+    </body>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2023 - Clinica General Nueva Vida #TodasMienten - <a asp-area="" asp-controller="Home" asp-action="Privacy">Politicas de Privacidad</a>
+    </div>
+</footer>
+</html>
+@*//VISTA MODIFICAR*@

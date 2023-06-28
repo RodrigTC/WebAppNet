@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    background-image: url('../img/fondocuadro.jpg');
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    color: white;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.developer {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.role {
+    color: white;
+}}

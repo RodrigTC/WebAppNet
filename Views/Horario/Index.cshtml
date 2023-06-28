@@ -1,0 +1,34 @@
+﻿@model IEnumerable<TRABAJO_FINAL.Models.Horario>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+}
+<html>
+<head>
+</head>
+<body>
+    <h2><a asp-action="NuevoHorario">Nuevo Horario</a></h2>
+    <h3 class="alert-primary">Listado de horarios</h3>
+    <table class="table table-bordered">
+        <tr>
+            <td>Codigo</td>
+            <td>Nombre de la especialidad</td>
+            <td>Eliminar</td>
+            <td>Modificar</td>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.I</td>
+                    <td>@item.Descripcion</td>
+                    @*<td><a asp-action="Eliminar" asp-route-id="@item.CodDis">Eliminar</a></td>
+                <td><a asp-action="Modificar" asp-route-id="@item.CodDis">Modificar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+*@

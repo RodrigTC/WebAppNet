@@ -1,0 +1,71 @@
+﻿@model TRABAJO_FINAL.Models.CitaTemporal
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/estilos3.css">
+    </head>
+    <body>
+        <div class="login-box">
+             <h1>Registro de citas </h1>
+             
+             <form asp-controller="Cita" asp-action="GuardarCitaTemp" method="post">
+                 @*<div class="form-group">
+                    <label >Nombre: </label>
+                    <select asp-for="nomUsu">
+                        <option>@TempData["nomb"] @TempData["apel"]</option>
+                    </select>
+                 </div>
+                 <div class="form-group">
+                    <label >Especialidad : </label>
+                    <select asp-for="nomEsp">
+                        <option>@TempData["esp"] [@TempData["cod"]]</option>
+                    </select>
+                 </div>
+           
+                 <div class="form-group">
+                     <label>Doctor: </label>
+                     <select asp-for="nomDoc">
+                         <option> @TempData["apedoc"] @TempData["nomdoc"]</option>
+                     </select>
+                 </div>*@
+
+                <input type="hidden" name="nomUsu" value="@TempData["nomb"]" />
+                <input type="hidden" name="apeDoc" value="@TempData["apedoc"]" />
+                <input type="hidden" name="nomEsp" value="@TempData["esp"]" />
+                <label>Seleccion alguno de los Horarios: </label><br />
+                <select name= "hora">
+                        <option selected>07:00:00</option>
+                        <option>08:00:00 </option>
+                        <option>09:00:00 </option>
+                        <option>10:00:00 </option>
+                        <option>11:00:00 </option>
+                        <option>12:00:00 </option>
+                        <option>13:00:00 </option>
+                        <option>14:00:00 </option>
+                </select>
+
+                <select name= "dia">
+                        <option selected>Lunes</option>
+                        <option>Martes</option>
+                        <option>Miercoles</option>
+                        <option>Jueves</option>
+                        <option>Viernes</option>
+                        <option>Sabado</option>
+                        <option>Domingo</option>
+                </select>
+
+                <select name="costo">
+                    <option selected>65,00</option>
+                </select>
+
+                <input type="submit" value="Aceptar">
+                
+             </form>
+        </div>
+    </body>
+</html>

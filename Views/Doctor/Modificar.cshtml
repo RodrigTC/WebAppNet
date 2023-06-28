@@ -1,0 +1,26 @@
+﻿@model TRABAJO_FINAL.Models.Doctor
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/estilos2.css">
+    </head>
+    <body>
+    <div class="login-box">
+        <form asp-controller="Doctor" asp-action="ModificarDoctor" method="post">
+
+            <input type="hidden" asp-for="IdDoctor" placeholder="Ingrese el codigo" />
+            Nombre<input type="text" asp-for="NombreD" placeholder="Ingrese el nombre" />
+            Apellido<input type="text" asp-for="ApellidoD" placeholder="Ingrese el Apellido" />
+            Correo<input type="text" asp-for="CorreoD" placeholder="Ingrese el Correo" />
+            <input type="hidden" asp-for="ContraseñaD" placeholder="Ingrese contraseña" />
+            <input type="hidden" asp-for="IdEspecialidad" placeholder="Ingrese la especialidad" />
+            <input type="submit" value="Modificar" />
+
+        </form>
+    </div>
+    </body>
+</html>

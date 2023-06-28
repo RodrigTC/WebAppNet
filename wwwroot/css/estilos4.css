@@ -1,0 +1,75 @@
+﻿/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/fondo2.jpg');
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la caja de inicio de sesión */
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Estilos para el encabezado de la caja */
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /* Estilos para los campos de entrada de texto */
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    .login-box input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para el botón de enviar */
+    .login-box input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    /* Estilos para el enlace de olvidó la contraseña */
+    .login-box .forgot-password {
+        text-align: right;
+        font-size: 12px;
+    }
+
+    /* Estilos para los mensajes de error */
+    .login-box .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 10px;
+    }
